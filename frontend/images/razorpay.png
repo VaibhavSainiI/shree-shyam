@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60">
+  <defs>
+    <linearGradient id="razorpay-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3395ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#114cff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card background -->
+  <rect width="100" height="60" rx="8" ry="8" fill="url(#razorpay-bg)"/>
+  <rect width="100" height="60" rx="8" ry="8" fill="none" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Razorpay logo design -->
+  <polygon points="15,20 35,15 35,25 25,30 15,35" fill="white"/>
+  <rect x="40" y="15" width="3" height="20" fill="white"/>
+  
+  <!-- Razorpay text -->
+  <text x="70" y="25" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Razor</text>
+  <text x="70" y="38" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">pay</text>
+  
+  <!-- Decorative elements -->
+  <rect x="5" y="50" width="90" height="2" fill="rgba(255,255,255,0.3)"/>
+</svg>

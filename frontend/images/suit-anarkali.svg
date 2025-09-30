@@ -1,0 +1,53 @@
+<!-- Suit 1: Anarkali Suit -->
+<svg width="300" height="400" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#90EE90;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#32CD32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#228B22;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="anarkaliPattern" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#90EE90"/>
+      <circle cx="6" cy="6" r="2" fill="#FFD700"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="400" fill="#F0FFF0"/>
+  
+  <!-- Anarkali bottom (flared) -->
+  <path d="M70 180 Q150 170 230 180 L250 370 Q150 380 50 370 Z" fill="url(#greenGradient)" stroke="#228B22" stroke-width="2"/>
+  
+  <!-- Anarkali top -->
+  <rect x="90" y="50" width="120" height="140" fill="url(#anarkaliPattern)" stroke="#228B22" stroke-width="2" rx="12"/>
+  
+  <!-- Sleeves (3/4 length) -->
+  <ellipse cx="75" cy="90" rx="22" ry="65" fill="url(#anarkaliPattern)" stroke="#228B22" stroke-width="2"/>
+  <ellipse cx="225" cy="90" rx="22" ry="65" fill="url(#anarkaliPattern)" stroke="#228B22" stroke-width="2"/>
+  
+  <!-- Neckline -->
+  <ellipse cx="150" cy="70" rx="20" ry="12" fill="#F0FFF0"/>
+  
+  <!-- Dupatta -->
+  <path d="M60 45 Q150 20 240 45 Q220 70 190 80 Q150 85 110 80 Q80 70 60 45" fill="#FFD700" opacity="0.6" stroke="#FFA500" stroke-width="1"/>
+  <path d="M80 60 Q150 40 220 60" stroke="#FFA500" stroke-width="2" fill="none"/>
+  
+  <!-- Embroidery on bodice -->
+  <circle cx="120" cy="100" r="4" fill="#FFD700"/>
+  <circle cx="140" cy="95" r="3" fill="#FFD700"/>
+  <circle cx="160" cy="100" r="4" fill="#FFD700"/>
+  <circle cx="180" cy="95" r="3" fill="#FFD700"/>
+  
+  <!-- Gota work on hem -->
+  <rect x="50" y="355" width="200" height="10" fill="#FFD700" opacity="0.8"/>
+  <rect x="55" y="345" width="190" height="6" fill="#FFD700" opacity="0.6"/>
+  
+  <!-- Side panels -->
+  <rect x="70" y="180" width="8" height="190" fill="#228B22" opacity="0.5"/>
+  <rect x="222" y="180" width="8" height="190" fill="#228B22" opacity="0.5"/>
+  
+  <!-- Price tag -->
+  <rect x="210" y="15" width="80" height="35" fill="#FFF" stroke="#333" stroke-width="1" rx="5"/>
+  <text x="225" y="27" font-family="Arial" font-size="10" fill="#228B22" font-weight="bold">₹4,599</text>
+  <text x="230" y="39" font-family="Arial" font-size="8" fill="#666">Anarkali</text>
+</svg>

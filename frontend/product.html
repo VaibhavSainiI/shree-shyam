@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Shree Shyam Collection</title>
+    <meta name="description" content="View detailed information about our premium ethnic wear products at Shree Shyam Collection.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Top announcement bar -->
+        <div class="announcement-bar">
+            <div class="announcement-content">
+                <p>⚡ Prepaid Orders on Express Delivery | 🚚 COD on Normal Delivery</p>
+            </div>
+        </div>
+        
+        <!-- Main header -->
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <!-- Mobile menu toggle -->
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <h1>Shree Shyam Collection</h1>
+                            <span class="tagline">Premium Ethnic Wear</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Navigation -->
+                    <nav class="main-nav" id="mainNav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="dropdown">
+                                <a href="shop.html">Shop <i class="fas fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shop.html?category=sarees">Sarees</a></li>
+                                    <li><a href="shop.html?category=lehengas">Lehengas</a></li>
+                                    <li><a href="shop.html?category=kurtis">Kurtis</a></li>
+                                    <li><a href="shop.html?category=suits">Suits</a></li>
+                                    <li><a href="shop.html?category=accessories">Accessories</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <!-- Header actions -->
+                    <div class="header-actions">
+                        <button class="search-toggle" id="searchToggle">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <a href="account.html" class="account-link">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <a href="cart.html" class="cart-link">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Search bar -->
+        <div class="search-bar" id="searchBar">
+            <div class="container">
+                <form class="search-form">
+                    <input type="text" placeholder="Search for products..." id="searchInput">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav" id="breadcrumbNav">
+                <a href="index.html">Home</a>
+                <span class="separator">/</span>
+                <a href="shop.html">Shop</a>
+                <span class="separator">/</span>
+                <span class="current" id="productCategory">Product</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="product-details">
+        <div class="container">
+            <div class="product-layout">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="mainProductImage" src="images/product-placeholder.jpg" alt="Product Image">
+                        <div class="image-zoom" id="imageZoom"></div>
+                    </div>
+                    <div class="thumbnail-images" id="thumbnailImages">
+                        <!-- Thumbnails will be loaded dynamically -->
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div class="product-header">
+                        <h1 id="productTitle">Product Title</h1>
+                        <div class="product-rating">
+                            <div class="stars" id="productStars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count" id="ratingCount">(24 reviews)</span>
+                        </div>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="current-price" id="currentPrice">₹2,999</span>
+                        <span class="original-price" id="originalPrice">₹3,999</span>
+                        <span class="discount" id="discount">25% OFF</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p id="productDescription">
+                            Elegant ethnic wear crafted with premium materials and exquisite attention to detail. 
+                            Perfect for special occasions and celebrations.
+                        </p>
+                    </div>
+
+                    <!-- Product Options -->
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <div class="size-options" id="sizeOptions">
+                                <button class="size-option" data-size="XS">XS</button>
+                                <button class="size-option" data-size="S">S</button>
+                                <button class="size-option" data-size="M">M</button>
+                                <button class="size-option" data-size="L">L</button>
+                                <button class="size-option" data-size="XL">XL</button>
+                            </div>
+                            <a href="size-guide.html" class="size-guide-link">Size Guide</a>
+                        </div>
+
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <div class="color-options" id="colorOptions">
+                                <button class="color-option" data-color="red" style="background-color: #ff0000;"></button>
+                                <button class="color-option" data-color="blue" style="background-color: #0000ff;"></button>
+                                <button class="color-option" data-color="green" style="background-color: #008000;"></button>
+                            </div>
+                        </div>
+
+                        <div class="option-group">
+                            <label>Quantity:</label>
+                            <div class="quantity-selector">
+                                <button class="qty-btn" id="decreaseQty">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10">
+                                <button class="qty-btn" id="increaseQty">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" id="addToCartBtn">
+                            <i class="fas fa-shopping-bag"></i>
+                            Add to Cart
+                        </button>
+                        <button class="buy-now-btn" id="buyNowBtn">
+                            Buy Now
+                        </button>
+                        <button class="wishlist-btn" id="wishlistBtn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <!-- Product Features -->
+                    <div class="product-features">
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Free shipping on orders over ₹1999</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-undo"></i>
+                            <span>Easy 30-day returns</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-certificate"></i>
+                            <span>Authentic & Quality Assured</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Details Tabs -->
+            <div class="product-tabs">
+                <div class="tab-navigation">
+                    <button class="tab-btn active" data-tab="details">Details</button>
+                    <button class="tab-btn" data-tab="care">Care Instructions</button>
+                    <button class="tab-btn" data-tab="shipping">Shipping</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-panel active" id="details">
+                        <h3>Product Details</h3>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <strong>Material:</strong>
+                                <span id="productMaterial">Premium Silk</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Work:</strong>
+                                <span id="productWork">Hand Embroidered</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Occasion:</strong>
+                                <span id="productOccasion">Wedding, Festival</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Care:</strong>
+                                <span>Dry Clean Only</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="care">
+                        <h3>Care Instructions</h3>
+                        <ul>
+                            <li>Dry clean only to maintain fabric quality</li>
+                            <li>Store in a cool, dry place</li>
+                            <li>Avoid direct sunlight when storing</li>
+                            <li>Handle embellishments with care</li>
+                            <li>Iron on reverse side if needed</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-panel" id="shipping">
+                        <h3>Shipping Information</h3>
+                        <div class="shipping-info">
+                            <div class="shipping-option">
+                                <strong>Standard Delivery (5-7 days):</strong>
+                                <span>Free on orders above ₹1999</span>
+                            </div>
+                            <div class="shipping-option">
+                                <strong>Express Delivery (2-3 days):</strong>
+                                <span>₹99 (Free on prepaid orders)</span>
+                            </div>
+                            <div class="shipping-option">
+                                <strong>Same Day Delivery:</strong>
+                                <span>Available in select cities - ₹199</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="reviews">
+                        <h3>Customer Reviews</h3>
+                        <div class="reviews-container" id="reviewsContainer">
+                            <!-- Reviews will be loaded dynamically -->
+                        </div>
+                        <button class="load-more-reviews" id="loadMoreReviews">Load More Reviews</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <div class="section-header">
+                <h2>You May Also Like</h2>
+            </div>
+            <div class="products-grid" id="relatedProducts">
+                <!-- Related products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shree Shyam Collection</h3>
+                    <p>Premium ethnic wear that celebrates tradition with contemporary elegance. Experience the beauty of Indian craftsmanship with our curated collection.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html?category=sarees">Sarees</a></li>
+                        <li><a href="shop.html?category=lehengas">Lehengas</a></li>
+                        <li><a href="shop.html?category=kurtis">Kurtis</a></li>
+                        <li><a href="shop.html?category=suits">Suits</a></li>
+                        <li><a href="shop.html?category=accessories">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html">Return & Refund</a></li>
+                        <li><a href="size-guide.html">Size Guide</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025, Shree Shyam Collection. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <img src="images/visa.png" alt="Visa">
+                    <img src="images/mastercard.png" alt="Mastercard">
+                    <img src="images/razorpay.png" alt="Razorpay">
+                    <img src="images/upi.png" alt="UPI">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <radialGradient id="suit-bg" cx="60%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#a29bfe;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6c5ce7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5f3dc4;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="suit-fabric" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fd79a8;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#fdcb6e;stop-opacity:0.9" />
+    </linearGradient>
+    <pattern id="traditional-motif" patternUnits="userSpaceOnUse" width="45" height="45">
+      <path d="M22.5,5 Q35,10 40,22.5 Q35,35 22.5,40 Q10,35 5,22.5 Q10,10 22.5,5" fill="rgba(255,255,255,0.3)"/>
+      <circle cx="22.5" cy="22.5" r="8" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#suit-bg)"/>
+  
+  <!-- Anarkali top -->
+  <path d="M180,100 Q300,85 420,100 L450,250 Q400,280 350,300 Q300,310 250,300 Q200,280 150,250 Z" fill="url(#suit-fabric)"/>
+  
+  <!-- Churidar bottom -->
+  <path d="M250,300 Q300,310 350,300 L340,380 Q320,385 300,380 Q280,385 260,380 Z" fill="url(#suit-fabric)" opacity="0.8"/>
+  
+  <!-- Dupatta -->
+  <path d="M120,120 Q180,100 240,120 Q200,140 160,130 Q140,125 120,120" fill="url(#suit-fabric)" opacity="0.7"/>
+  <path d="M360,120 Q420,100 480,120 Q440,140 400,130 Q380,125 360,120" fill="url(#suit-fabric)" opacity="0.7"/>
+  
+  <!-- Traditional motifs -->
+  <rect x="180" y="100" width="240" height="200" fill="url(#traditional-motif)" opacity="0.6"/>
+  
+  <!-- Heavy embroidery at bottom -->
+  <path d="M150,250 Q300,270 450,250" stroke="#ffd700" stroke-width="8" fill="none"/>
+  <path d="M170,260 Q300,280 430,260" stroke="#ff6348" stroke-width="4" fill="none"/>
+  
+  <!-- Neck embroidery -->
+  <ellipse cx="300" cy="120" rx="50" ry="20" fill="none" stroke="#ffd700" stroke-width="4"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="220" cy="180" r="6" fill="#ffd700"/>
+  <circle cx="380" cy="200" r="6" fill="#ffd700"/>
+  <circle cx="300" cy="220" r="8" fill="#ffd700"/>
+  <circle cx="250" cy="240" r="5" fill="#ffd700"/>
+  <circle cx="350" cy="180" r="5" fill="#ffd700"/>
+  
+  <!-- Text overlay -->
+  <rect x="0" y="320" width="600" height="80" fill="rgba(0,0,0,0.4)"/>
+  <text x="300" y="360" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="white">Suits</text>
+  <text x="300" y="385" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="gold">Royal Heritage</text>
+</svg>

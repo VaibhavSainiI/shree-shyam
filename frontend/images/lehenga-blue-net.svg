@@ -1,0 +1,50 @@
+<!-- Lehenga 3: Blue Net Lehenga -->
+<svg width="300" height="400" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEFA;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4169E1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0000CD;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="netPattern" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#87CEFA" opacity="0.3"/>
+      <rect x="0" y="0" width="1" height="8" fill="#4169E1"/>
+      <rect x="0" y="0" width="8" height="1" fill="#4169E1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="400" fill="#F0F8FF"/>
+  
+  <!-- Lehenga Skirt -->
+  <path d="M40 155 Q150 140 260 155 L250 390 Q150 400 50 390 Z" fill="url(#blueGradient)" stroke="#0000CD" stroke-width="2"/>
+  
+  <!-- Net overlay -->
+  <path d="M42 157 Q150 142 258 157 L248 388 Q150 398 52 388 Z" fill="url(#netPattern)" opacity="0.7"/>
+  
+  <!-- Blouse -->
+  <rect x="95" y="38" width="110" height="125" fill="url(#blueGradient)" stroke="#0000CD" stroke-width="2" rx="12"/>
+  
+  <!-- Sleeves -->
+  <ellipse cx="80" cy="78" rx="20" ry="38" fill="url(#blueGradient)" stroke="#0000CD" stroke-width="2"/>
+  <ellipse cx="220" cy="78" rx="20" ry="38" fill="url(#blueGradient)" stroke="#0000CD" stroke-width="2"/>
+  
+  <!-- Dupatta -->
+  <path d="M75 55 Q150 25 225 55 Q205 80 180 90 Q150 95 120 90 Q95 80 75 55" fill="#87CEFA" opacity="0.8" stroke="#4169E1" stroke-width="1"/>
+  
+  <!-- Sequin work -->
+  <circle cx="95" cy="190" r="2" fill="#C0C0C0"/>
+  <circle cx="125" cy="210" r="2" fill="#C0C0C0"/>
+  <circle cx="175" cy="200" r="2" fill="#C0C0C0"/>
+  <circle cx="205" cy="220" r="2" fill="#C0C0C0"/>
+  <circle cx="110" cy="250" r="2" fill="#C0C0C0"/>
+  <circle cx="190" cy="260" r="2" fill="#C0C0C0"/>
+  
+  <!-- Border work -->
+  <rect x="40" y="375" width="220" height="15" fill="#FFD700" opacity="0.9"/>
+  
+  <!-- Price tag -->
+  <rect x="210" y="15" width="80" height="35" fill="#FFF" stroke="#333" stroke-width="1" rx="5"/>
+  <text x="225" y="27" font-family="Arial" font-size="10" fill="#0000CD" font-weight="bold">₹15,999</text>
+  <text x="235" y="39" font-family="Arial" font-size="8" fill="#666">Net Work</text>
+</svg>

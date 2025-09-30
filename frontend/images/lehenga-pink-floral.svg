@@ -1,0 +1,49 @@
+<!-- Lehenga 2: Pink Floral Lehenga -->
+<svg width="300" height="400" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pinkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB6C1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF69B4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF1493;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="floralPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#FFB6C1"/>
+      <circle cx="10" cy="10" r="3" fill="#FF69B4"/>
+      <circle cx="5" cy="5" r="2" fill="#FFF"/>
+      <circle cx="15" cy="15" r="2" fill="#FFF"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="400" fill="#FFF8DC"/>
+  
+  <!-- Lehenga Skirt -->
+  <path d="M45 160 Q150 145 255 160 L245 385 Q150 395 55 385 Z" fill="url(#pinkGradient)" stroke="#FF1493" stroke-width="2"/>
+  
+  <!-- Floral embroidery -->
+  <circle cx="90" cy="200" r="5" fill="#FFF"/>
+  <circle cx="120" cy="230" r="4" fill="#FFF"/>
+  <circle cx="180" cy="210" r="5" fill="#FFF"/>
+  <circle cx="210" cy="240" r="4" fill="#FFF"/>
+  <circle cx="100" cy="280" r="3" fill="#FFF"/>
+  <circle cx="200" cy="290" r="3" fill="#FFF"/>
+  
+  <!-- Blouse -->
+  <rect x="95" y="35" width="110" height="130" fill="url(#floralPattern)" stroke="#FF1493" stroke-width="2" rx="8"/>
+  
+  <!-- Sleeves -->
+  <ellipse cx="80" cy="75" rx="18" ry="40" fill="url(#floralPattern)" stroke="#FF1493" stroke-width="2"/>
+  <ellipse cx="220" cy="75" rx="18" ry="40" fill="url(#floralPattern)" stroke="#FF1493" stroke-width="2"/>
+  
+  <!-- Dupatta -->
+  <path d="M70 50 Q150 25 230 50 Q210 75 185 85 Q150 90 115 85 Q90 75 70 50" fill="#FFB6C1" opacity="0.7" stroke="#FF69B4" stroke-width="1"/>
+  
+  <!-- Gota work -->
+  <rect x="45" y="365" width="210" height="15" fill="#FFD700" opacity="0.8"/>
+  <rect x="50" y="340" width="200" height="8" fill="#FFD700" opacity="0.6"/>
+  
+  <!-- Price tag -->
+  <rect x="215" y="15" width="75" height="35" fill="#FFF" stroke="#333" stroke-width="1" rx="5"/>
+  <text x="228" y="27" font-family="Arial" font-size="10" fill="#FF1493" font-weight="bold">₹8,999</text>
+  <text x="238" y="39" font-family="Arial" font-size="8" fill="#666">Floral</text>
+</svg>

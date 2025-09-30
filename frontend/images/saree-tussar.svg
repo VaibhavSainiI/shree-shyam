@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="tussar-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="madhubani-art" patternUnits="userSpaceOnUse" width="60" height="60">
+      <g transform="translate(30,30)">
+        <circle r="15" fill="#8B4513" opacity="0.7"/>
+        <path d="M-10,-10 Q0,-20 10,-10 Q20,0 10,10 Q0,20 -10,10 Q-20,0 -10,-10" fill="#228B22" opacity="0.8"/>
+        <circle r="8" fill="#DC143C" opacity="0.9"/>
+        <path d="M-5,0 L5,0 M0,-5 L0,5 M-3,-3 L3,3 M3,-3 L-3,3" stroke="#FFF" stroke-width="1" opacity="0.8"/>
+      </g>
+    </pattern>
+    <pattern id="natural-texture" patternUnits="userSpaceOnUse" width="30" height="30">
+      <rect width="30" height="30" fill="#DAA520" opacity="0.3"/>
+      <path d="M0,15 L30,15 M15,0 L15,30" stroke="#B8860B" stroke-width="0.5" opacity="0.5"/>
+      <circle cx="7" cy="7" r="1" fill="#8B4513" opacity="0.6"/>
+      <circle cx="23" cy="23" r="1" fill="#8B4513" opacity="0.6"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#tussar-bg)"/>
+  
+  <!-- Natural tussar silk saree -->
+  <path d="M70,55 Q200,35 330,55 L310,345 Q200,365 90,345 Z" fill="url(#tussar-bg)" opacity="0.9"/>
+  
+  <!-- Natural texture overlay -->
+  <rect x="70" y="55" width="260" height="290" fill="url(#natural-texture)" opacity="0.8"/>
+  
+  <!-- Handpainted Madhubani art -->
+  <rect x="90" y="75" width="220" height="250" fill="url(#madhubani-art)" opacity="0.8"/>
+  
+  <!-- Natural silk border -->
+  <rect x="65" y="50" width="270" height="12" fill="#8B4513" opacity="0.7"/>
+  <rect x="65" y="338" width="270" height="12" fill="#8B4513" opacity="0.7"/>
+  <rect x="65" y="50" width="12" height="300" fill="#8B4513" opacity="0.7"/>
+  <rect x="323" y="50" width="12" height="300" fill="#8B4513" opacity="0.7"/>
+  
+  <!-- Madhubani fish motif -->
+  <g transform="translate(150,150)">
+    <path d="M-20,0 Q-10,-15 10,-10 Q20,-5 25,0 Q20,5 10,10 Q-10,15 -20,0" fill="#DC143C" opacity="0.9"/>
+    <circle cx="10" cy="0" r="3" fill="#FFF" opacity="0.9"/>
+    <path d="M-15,-5 L-15,5 M-10,-8 L-10,8 M-5,-6 L-5,6" stroke="#228B22" stroke-width="2" opacity="0.8"/>
+  </g>
+  
+  <!-- Madhubani bird motif -->
+  <g transform="translate(250,220)">
+    <path d="M-15,-10 Q0,-20 15,-5 Q20,0 15,10 Q0,15 -10,10 Q-20,5 -15,-10" fill="#228B22" opacity="0.9"/>
+    <circle cx="5" cy="-5" r="2" fill="#FFF" opacity="0.9"/>
+    <path d="M-12,-5 L-8,-5 M-10,-8 L-10,-2" stroke="#DC143C" stroke-width="2" opacity="0.8"/>
+  </g>
+  
+  <!-- Madhubani tree motif -->
+  <g transform="translate(200,280)">
+    <rect x="-2" y="-10" width="4" height="20" fill="#8B4513" opacity="0.8"/>
+    <circle cx="0" cy="-15" r="8" fill="#228B22" opacity="0.8"/>
+    <circle cx="-6" cy="-12" r="4" fill="#228B22" opacity="0.7"/>
+    <circle cx="6" cy="-12" r="4" fill="#228B22" opacity="0.7"/>
+    <path d="M-8,-15 L8,-15 M-6,-18 L6,-18" stroke="#DC143C" stroke-width="1" opacity="0.7"/>
+  </g>
+  
+  <!-- Traditional geometric patterns -->
+  <g transform="translate(120,120)">
+    <rect x="-8" y="-8" width="16" height="16" fill="#8B4513" opacity="0.7"/>
+    <rect x="-6" y="-6" width="12" height="12" fill="#DC143C" opacity="0.8"/>
+    <rect x="-4" y="-4" width="8" height="8" fill="#FFF" opacity="0.9"/>
+  </g>
+  
+  <g transform="translate(280,180)">
+    <rect x="-8" y="-8" width="16" height="16" fill="#8B4513" opacity="0.7"/>
+    <rect x="-6" y="-6" width="12" height="12" fill="#DC143C" opacity="0.8"/>
+    <rect x="-4" y="-4" width="8" height="8" fill="#FFF" opacity="0.9"/>
+  </g>
+</svg>

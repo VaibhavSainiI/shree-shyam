@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="net-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2F2F2F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="net-mesh" patternUnits="userSpaceOnUse" width="20" height="20">
+      <rect width="20" height="20" fill="none" stroke="#666" stroke-width="0.5" opacity="0.4"/>
+      <circle cx="10" cy="10" r="1" fill="#666" opacity="0.3"/>
+    </pattern>
+    <pattern id="heavy-stones" patternUnits="userSpaceOnUse" width="40" height="40">
+      <g transform="translate(20,20)">
+        <circle r="8" fill="#FFD700" opacity="0.9"/>
+        <circle r="6" fill="#FFF" opacity="0.8"/>
+        <circle r="4" fill="#FFD700" opacity="0.9"/>
+        <circle r="2" fill="#FFF" opacity="1"/>
+      </g>
+      <circle cx="10" cy="10" r="3" fill="#C0C0C0" opacity="0.7"/>
+      <circle cx="30" cy="30" r="3" fill="#C0C0C0" opacity="0.7"/>
+    </pattern>
+    <pattern id="thread-work" patternUnits="userSpaceOnUse" width="30" height="30">
+      <path d="M0,15 Q15,0 30,15 Q15,30 0,15" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.8"/>
+      <path d="M15,0 Q30,15 15,30 Q0,15 15,0" fill="none" stroke="#C0C0C0" stroke-width="1" opacity="0.6"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#net-bg)"/>
+  
+  <!-- Glamorous net saree -->
+  <path d="M75,50 Q200,30 325,50 L305,350 Q200,370 95,350 Z" fill="url(#net-bg)" opacity="0.9"/>
+  
+  <!-- Net mesh texture -->
+  <rect x="75" y="50" width="250" height="300" fill="url(#net-mesh)" opacity="0.8"/>
+  
+  <!-- Heavy stone work -->
+  <rect x="85" y="60" width="230" height="280" fill="url(#heavy-stones)" opacity="0.9"/>
+  
+  <!-- Thread work overlay -->
+  <rect x="95" y="70" width="210" height="260" fill="url(#thread-work)" opacity="0.7"/>
+  
+  <!-- Glamorous border with stones -->
+  <rect x="70" y="45" width="260" height="15" fill="#FFD700" opacity="0.8"/>
+  <rect x="70" y="340" width="260" height="15" fill="#FFD700" opacity="0.8"/>
+  <rect x="70" y="45" width="15" height="310" fill="#FFD700" opacity="0.8"/>
+  <rect x="315" y="45" width="15" height="310" fill="#FFD700" opacity="0.8"/>
+  
+  <!-- Large decorative stones -->
+  <g transform="translate(200,150)">
+    <circle r="20" fill="#FFD700" opacity="0.9"/>
+    <circle r="15" fill="#FFF" opacity="0.8"/>
+    <circle r="10" fill="#FFD700" opacity="0.9"/>
+    <circle r="6" fill="#FFF" opacity="1"/>
+    <circle r="3" fill="#FFD700" opacity="1"/>
+  </g>
+  
+  <g transform="translate(150,220)">
+    <circle r="15" fill="#C0C0C0" opacity="0.9"/>
+    <circle r="10" fill="#FFF" opacity="0.8"/>
+    <circle r="6" fill="#C0C0C0" opacity="0.9"/>
+    <circle r="3" fill="#FFF" opacity="1"/>
+  </g>
+  
+  <g transform="translate(250,280)">
+    <circle r="15" fill="#C0C0C0" opacity="0.9"/>
+    <circle r="10" fill="#FFF" opacity="0.8"/>
+    <circle r="6" fill="#C0C0C0" opacity="0.9"/>
+    <circle r="3" fill="#FFF" opacity="1"/>
+  </g>
+  
+  <!-- Scattered small stones -->
+  <circle cx="130" cy="120" r="4" fill="#FFD700" opacity="0.8"/>
+  <circle cx="180" cy="110" r="3" fill="#C0C0C0" opacity="0.7"/>
+  <circle cx="270" cy="130" r="4" fill="#FFD700" opacity="0.8"/>
+  <circle cx="160" cy="300" r="3" fill="#C0C0C0" opacity="0.7"/>
+  <circle cx="240" cy="320" r="4" fill="#FFD700" opacity="0.8"/>
+  <circle cx="120" cy="280" r="3" fill="#C0C0C0" opacity="0.7"/>
+  <circle cx="280" cy="200" r="4" fill="#FFD700" opacity="0.8"/>
+  <circle cx="110" cy="200" r="3" fill="#C0C0C0" opacity="0.7"/>
+  
+  <!-- Heavy thread work patterns -->
+  <path d="M100,100 Q150,80 200,100 Q250,80 300,100" fill="none" stroke="#FFD700" stroke-width="3" opacity="0.8"/>
+  <path d="M100,200 Q150,180 200,200 Q250,180 300,200" fill="none" stroke="#C0C0C0" stroke-width="2" opacity="0.7"/>
+  <path d="M100,300 Q150,280 200,300 Q250,280 300,300" fill="none" stroke="#FFD700" stroke-width="3" opacity="0.8"/>
+  
+  <!-- Net shine effect -->
+  <rect x="85" y="70" width="230" height="260" fill="url(#net-mesh)" opacity="0.3" transform="rotate(45 200 200)"/>
+</svg>

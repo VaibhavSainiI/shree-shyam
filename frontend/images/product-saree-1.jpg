@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <linearGradient id="product1-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff7675;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d63031;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="banarasi-pattern" patternUnits="userSpaceOnUse" width="40" height="40">
+      <path d="M20,5 Q30,10 35,20 Q30,30 20,35 Q10,30 5,20 Q10,10 20,5" fill="rgba(255,215,0,0.6)"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#product1-bg)"/>
+  
+  <!-- Saree draping -->
+  <path d="M50,100 Q200,80 350,100 L330,400 Q200,420 70,400 Z" fill="rgba(255,255,255,0.9)"/>
+  
+  <!-- Banarasi pattern -->
+  <rect x="50" y="100" width="300" height="300" fill="url(#banarasi-pattern)"/>
+  
+  <!-- Gold border -->
+  <path d="M50,100 Q200,80 350,100" stroke="#ffd700" stroke-width="8" fill="none"/>
+  <path d="M70,400 Q200,420 330,400" stroke="#ffd700" stroke-width="8" fill="none"/>
+  
+  <!-- Traditional motifs -->
+  <circle cx="150" cy="200" r="20" fill="#ffd700" opacity="0.8"/>
+  <circle cx="250" cy="250" r="15" fill="#ffd700" opacity="0.8"/>
+  <polygon points="200,300 220,310 210,330 190,330 180,310" fill="#ffd700" opacity="0.8"/>
+  
+  <!-- Product label -->
+  <rect x="20" y="420" width="360" height="60" fill="rgba(0,0,0,0.7)" rx="5"/>
+  <text x="200" y="445" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Elegant Banarasi Saree</text>
+  <text x="200" y="465" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#ffd700">₹4,999</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <linearGradient id="product2-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fd79a8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e84393;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="embroidery-pattern" patternUnits="userSpaceOnUse" width="30" height="30">
+      <circle cx="15" cy="15" r="8" fill="rgba(255,255,255,0.4)"/>
+      <polygon points="15,5 25,12 20,22 10,22 5,12" fill="rgba(255,215,0,0.6)"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#product2-bg)"/>
+  
+  <!-- Lehenga skirt -->
+  <path d="M80,250 Q200,230 320,250 L370,450 Q200,480 30,450 Z" fill="rgba(255,255,255,0.9)"/>
+  
+  <!-- Choli (blouse) -->
+  <path d="M150,100 Q200,90 250,100 L240,220 Q200,230 160,220 Z" fill="rgba(255,255,255,0.9)"/>
+  
+  <!-- Heavy embroidery -->
+  <rect x="80" y="250" width="240" height="200" fill="url(#embroidery-pattern)"/>
+  
+  <!-- Heavy border work -->
+  <path d="M30,450 Q200,480 370,450" stroke="#ffd700" stroke-width="12" fill="none"/>
+  <path d="M50,440 Q200,470 350,440" stroke="#ff6348" stroke-width="6" fill="none"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="200" cy="300" r="25" fill="#ffd700" opacity="0.8"/>
+  <circle cx="150" cy="350" r="15" fill="#ffd700" opacity="0.8"/>
+  <circle cx="250" cy="350" r="15" fill="#ffd700" opacity="0.8"/>
+  
+  <!-- Product label -->
+  <rect x="20" y="420" width="360" height="60" fill="rgba(0,0,0,0.7)" rx="5"/>
+  <text x="200" y="445" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Designer Lehenga Choli</text>
+  <text x="200" y="465" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#ffd700">₹15,999</text>
+</svg>

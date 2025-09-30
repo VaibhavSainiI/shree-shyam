@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="kanjivaram-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4169E1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0000CD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#191970;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="traditional-motif" patternUnits="userSpaceOnUse" width="60" height="60">
+      <g transform="translate(30,30)">
+        <circle r="12" fill="#FFD700" opacity="0.6"/>
+        <path d="M-15,0 Q0,-15 15,0 Q0,15 -15,0" fill="#FFD700" opacity="0.8"/>
+        <circle r="6" fill="#FFF" opacity="0.4"/>
+      </g>
+    </pattern>
+    <pattern id="rich-zari" patternUnits="userSpaceOnUse" width="30" height="30">
+      <rect width="30" height="30" fill="#FFD700" opacity="0.4"/>
+      <path d="M0,15 L30,15 M15,0 L15,30 M0,0 L30,30 M30,0 L0,30" stroke="#FFD700" stroke-width="1" opacity="0.6"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#kanjivaram-bg)"/>
+  
+  <!-- Saree body -->
+  <path d="M60,40 Q200,20 340,40 L320,360 Q200,380 80,360 Z" fill="url(#kanjivaram-bg)" opacity="0.95"/>
+  
+  <!-- Traditional motifs -->
+  <rect x="60" y="40" width="280" height="320" fill="url(#traditional-motif)" opacity="0.7"/>
+  
+  <!-- Rich zari border -->
+  <rect x="50" y="30" width="30" height="340" fill="url(#rich-zari)"/>
+  <rect x="320" y="30" width="30" height="340" fill="url(#rich-zari)"/>
+  <rect x="50" y="30" width="300" height="30" fill="url(#rich-zari)"/>
+  <rect x="50" y="340" width="300" height="30" fill="url(#rich-zari)"/>
+  
+  <!-- Royal motifs -->
+  <g transform="translate(200,120)">
+    <path d="M-25,0 Q-15,-20 0,-25 Q15,-20 25,0 Q15,20 0,25 Q-15,20 -25,0" fill="#FFD700" opacity="0.8"/>
+    <circle r="15" fill="none" stroke="#FFF" stroke-width="2" opacity="0.6"/>
+  </g>
+  
+  <g transform="translate(200,280)">
+    <path d="M-25,0 Q-15,-20 0,-25 Q15,-20 25,0 Q15,20 0,25 Q-15,20 -25,0" fill="#FFD700" opacity="0.8"/>
+    <circle r="15" fill="none" stroke="#FFF" stroke-width="2" opacity="0.6"/>
+  </g>
+  
+  <!-- Corner peacock motifs -->
+  <g transform="translate(100,100)">
+    <path d="M0,0 Q10,-10 20,0 Q15,5 20,10 Q10,15 0,10 Q-5,5 0,0" fill="#FFD700" opacity="0.9"/>
+  </g>
+  <g transform="translate(300,300)">
+    <path d="M0,0 Q10,-10 20,0 Q15,5 20,10 Q10,15 0,10 Q-5,5 0,0" fill="#FFD700" opacity="0.9"/>
+  </g>
+</svg>

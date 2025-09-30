@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60">
+  <defs>
+    <linearGradient id="visa-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1f71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#003d82;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card background -->
+  <rect width="100" height="60" rx="8" ry="8" fill="url(#visa-bg)"/>
+  <rect width="100" height="60" rx="8" ry="8" fill="none" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- VISA text -->
+  <text x="50" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">VISA</text>
+  
+  <!-- Card chip representation -->
+  <rect x="15" y="15" width="12" height="10" rx="2" ry="2" fill="#ffd700"/>
+  
+  <!-- Decorative elements -->
+  <rect x="5" y="50" width="90" height="2" fill="rgba(255,255,255,0.3)"/>
+</svg>

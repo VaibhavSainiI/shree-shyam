@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="suits-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffeaa7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fdcb6e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e17055;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="dupatta-gradient" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#fab1a0;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#e84393;stop-opacity:0.9" />
+    </radialGradient>
+    <pattern id="paisley-pattern" patternUnits="userSpaceOnUse" width="40" height="60">
+      <path d="M20,10 Q30,5 35,15 Q40,25 35,35 Q30,45 20,40 Q15,35 15,25 Q15,15 20,10 Z" fill="rgba(255,255,255,0.3)"/>
+      <circle cx="25" cy="25" r="3" fill="rgba(255,255,255,0.5)"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#suits-bg)"/>
+  
+  <!-- Suit top (kameez) -->
+  <path d="M180,80 Q300,70 420,80 L400,280 Q300,290 200,280 Z" fill="url(#dupatta-gradient)" opacity="0.9"/>
+  
+  <!-- Sleeves -->
+  <ellipse cx="150" cy="130" rx="30" ry="60" fill="url(#dupatta-gradient)" opacity="0.8"/>
+  <ellipse cx="450" cy="130" rx="30" ry="60" fill="url(#dupatta-gradient)" opacity="0.8"/>
+  
+  <!-- Salwar/churidar bottom -->
+  <path d="M200,280 L400,280 L380,370 L360,370 L350,350 L250,350 L240,370 L220,370 Z" fill="url(#dupatta-gradient)" opacity="0.7"/>
+  
+  <!-- Dupatta -->
+  <path d="M120,100 Q300,80 480,100 Q450,120 400,140 Q350,150 300,145 Q250,150 200,140 Q150,120 120,100 Z" fill="url(#dupatta-gradient)" opacity="0.6"/>
+  
+  <!-- Paisley pattern overlay -->
+  <rect x="180" y="80" width="240" height="200" fill="url(#paisley-pattern)" opacity="0.4"/>
+  
+  <!-- Neckline embroidery -->
+  <path d="M250,100 Q300,95 350,100 Q340,110 330,115 Q300,120 270,115 Q260,110 250,100 Z" fill="#ffd700" opacity="0.8"/>
+  
+  <!-- Border details -->
+  <rect x="180" y="270" width="240" height="10" fill="#ffd700" opacity="0.9"/>
+  <rect x="200" y="360" width="200" height="8" fill="#ffd700" opacity="0.9"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="220" cy="120" r="6" fill="#fff" opacity="0.7"/>
+  <circle cx="380" cy="120" r="6" fill="#fff" opacity="0.7"/>
+  <circle cx="300" cy="105" r="8" fill="#ffd700" opacity="0.8"/>
+  
+  <!-- Text overlay -->
+  <rect x="0" y="320" width="600" height="80" fill="rgba(0,0,0,0.5)"/>
+  <text x="300" y="360" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="white">Suits</text>
+  <text x="300" y="385" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="gold">Traditional Elegance</text>
+</svg>

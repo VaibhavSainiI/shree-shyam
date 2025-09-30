@@ -1,0 +1,56 @@
+<!-- Suit 2: Sharara Suit -->
+<svg width="300" height="400" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DDA0DD;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#9370DB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8A2BE2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="400" fill="#F8F0FF"/>
+  
+  <!-- Sharara pants (wide-legged) -->
+  <path d="M100 200 L200 200 L220 380 L190 380 L190 350 L110 350 L110 380 L80 380 Z" fill="url(#purpleGradient)" stroke="#8A2BE2" stroke-width="2"/>
+  
+  <!-- Kurta top -->
+  <rect x="85" y="45" width="130" height="160" fill="url(#purpleGradient)" stroke="#8A2BE2" stroke-width="2" rx="15"/>
+  
+  <!-- Sleeves -->
+  <ellipse cx="70" cy="85" rx="20" ry="45" fill="url(#purpleGradient)" stroke="#8A2BE2" stroke-width="2"/>
+  <ellipse cx="230" cy="85" rx="20" ry="45" fill="url(#purpleGradient)" stroke="#8A2BE2" stroke-width="2"/>
+  
+  <!-- Neckline -->
+  <path d="M125 60 Q150 45 175 60 Q150 75 125 60" fill="#F8F0FF" stroke="#8A2BE2" stroke-width="2"/>
+  
+  <!-- Dupatta -->
+  <path d="M65 40 Q150 15 235 40 Q215 65 185 75 Q150 80 115 75 Q85 65 65 40" fill="#DDA0DD" opacity="0.7" stroke="#9370DB" stroke-width="1"/>
+  
+  <!-- Embroidery -->
+  <circle cx="110" cy="110" r="5" fill="#FFD700"/>
+  <circle cx="130" cy="105" r="4" fill="#FFD700"/>
+  <circle cx="150" cy="110" r="5" fill="#FFD700"/>
+  <circle cx="170" cy="105" r="4" fill="#FFD700"/>
+  <circle cx="190" cy="110" r="5" fill="#FFD700"/>
+  
+  <!-- Mirror work -->
+  <rect x="120" y="140" width="6" height="6" fill="#C0C0C0" transform="rotate(45 123 143)"/>
+  <rect x="140" y="145" width="6" height="6" fill="#C0C0C0" transform="rotate(45 143 148)"/>
+  <rect x="160" y="140" width="6" height="6" fill="#C0C0C0" transform="rotate(45 163 143)"/>
+  <rect x="180" y="145" width="6" height="6" fill="#C0C0C0" transform="rotate(45 183 148)"/>
+  
+  <!-- Sharara pleats -->
+  <line x1="120" y1="200" x2="125" y2="380" stroke="#8A2BE2" stroke-width="1"/>
+  <line x1="150" y1="200" x2="150" y2="380" stroke="#8A2BE2" stroke-width="1"/>
+  <line x1="180" y1="200" x2="175" y2="380" stroke="#8A2BE2" stroke-width="1"/>
+  
+  <!-- Gota border -->
+  <rect x="85" y="185" width="130" height="8" fill="#FFD700" opacity="0.8"/>
+  <rect x="80" y="365" width="140" height="10" fill="#FFD700" opacity="0.8"/>
+  
+  <!-- Price tag -->
+  <rect x="205" y="10" width="85" height="35" fill="#FFF" stroke="#333" stroke-width="1" rx="5"/>
+  <text x="220" y="22" font-family="Arial" font-size="10" fill="#8A2BE2" font-weight="bold">₹6,299</text>
+  <text x="230" y="34" font-family="Arial" font-size="8" fill="#666">Sharara</text>
+</svg>

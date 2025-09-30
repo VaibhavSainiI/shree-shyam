@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="commitment-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00b894;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00a085;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="quality-pattern" patternUnits="userSpaceOnUse" width="40" height="40">
+      <polygon points="20,5 35,15 30,30 10,30 5,15" fill="rgba(255,255,255,0.1)"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#commitment-bg)"/>
+  <rect width="800" height="500" fill="url(#quality-pattern)"/>
+  
+  <!-- Central commitment symbol -->
+  <circle cx="400" cy="250" r="120" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="400" cy="250" r="100" fill="none" stroke="white" stroke-width="4"/>
+  
+  <!-- Quality symbols -->
+  <circle cx="300" cy="180" r="30" fill="#ffd700" opacity="0.8"/>
+  <text x="300" y="190" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">✓</text>
+  
+  <circle cx="500" cy="180" r="30" fill="#ffd700" opacity="0.8"/>
+  <path d="M485,170 Q500,160 515,170 Q500,180 485,170" fill="white"/>
+  
+  <circle cx="300" cy="320" r="30" fill="#ffd700" opacity="0.8"/>
+  <rect x="290" y="310" width="20" height="20" fill="white" rx="3"/>
+  
+  <circle cx="500" cy="320" r="30" fill="#ffd700" opacity="0.8"/>
+  <polygon points="500,310 510,315 505,325 495,325 490,315" fill="white"/>
+  
+  <!-- Central commitment text -->
+  <text x="400" y="240" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">Our</text>
+  <text x="400" y="265" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">Commitment</text>
+  
+  <!-- Values around the circle -->
+  <text x="200" y="120" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Quality</text>
+  <text x="600" y="120" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Innovation</text>
+  <text x="200" y="380" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Tradition</text>
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Excellence</text>
+  
+  <!-- Connecting lines -->
+  <line x1="300" y1="180" x2="350" y2="220" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="500" y1="180" x2="450" y2="220" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="300" y1="320" x2="350" y2="280" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="500" y1="320" x2="450" y2="280" stroke="white" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Bottom text -->
+  <rect x="0" y="420" width="800" height="80" fill="rgba(0,0,0,0.3)"/>
+  <text x="400" y="460" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="white">Our Commitment to Excellence</text>
+  <text x="400" y="485" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#ffd700">Delivering Quality Ethnic Wear with Traditional Values</text>
+</svg>

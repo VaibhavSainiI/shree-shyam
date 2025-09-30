@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Shree Shyam Collection</title>
+    <meta name="description" content="Review your selected items and proceed to checkout at Shree Shyam Collection.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Top announcement bar -->
+        <div class="announcement-bar">
+            <div class="announcement-content">
+                <p>⚡ Prepaid Orders on Express Delivery | 🚚 COD on Normal Delivery</p>
+            </div>
+        </div>
+        
+        <!-- Main header -->
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <!-- Mobile menu toggle -->
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <h1>Shree Shyam Collection</h1>
+                            <span class="tagline">Premium Ethnic Wear</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Navigation -->
+                    <nav class="main-nav" id="mainNav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="dropdown">
+                                <a href="shop.html">Shop <i class="fas fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shop.html?category=sarees">Sarees</a></li>
+                                    <li><a href="shop.html?category=lehengas">Lehengas</a></li>
+                                    <li><a href="shop.html?category=kurtis">Kurtis</a></li>
+                                    <li><a href="shop.html?category=suits">Suits</a></li>
+                                    <li><a href="shop.html?category=accessories">Accessories</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <!-- Header actions -->
+                    <div class="header-actions">
+                        <button class="search-toggle" id="searchToggle">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <a href="account.html" class="account-link">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <a href="cart.html" class="cart-link active">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Search bar -->
+        <div class="search-bar" id="searchBar">
+            <div class="container">
+                <form class="search-form">
+                    <input type="text" placeholder="Search for products..." id="searchInput">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Home</a>
+                <span class="separator">/</span>
+                <span class="current">Shopping Cart</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="cart-content">
+        <div class="container">
+            <div class="cart-header">
+                <h1>Shopping Cart</h1>
+                <p class="cart-item-count" id="cartItemCount">0 items in your cart</p>
+            </div>
+
+            <div class="cart-layout" id="cartLayout">
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <div class="cart-items-container" id="cartItemsContainer">
+                        <!-- Cart items will be loaded dynamically -->
+                    </div>
+                    
+                    <!-- Empty cart message -->
+                    <div class="empty-cart" id="emptyCart">
+                        <i class="fas fa-shopping-bag"></i>
+                        <h3>Your cart is empty</h3>
+                        <p>Looks like you haven't added any items to your cart yet.</p>
+                        <a href="shop.html" class="continue-shopping-btn">Continue Shopping</a>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary" id="cartSummary">
+                    <div class="summary-card">
+                        <h3>Order Summary</h3>
+                        
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">₹0</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span>Shipping:</span>
+                            <span id="shippingCost">Free</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span>Tax:</span>
+                            <span id="tax">₹0</span>
+                        </div>
+                        
+                        <div class="summary-row discount-row" id="discountRow" style="display: none;">
+                            <span>Discount:</span>
+                            <span id="discount">-₹0</span>
+                        </div>
+                        
+                        <hr>
+                        
+                        <div class="summary-row total-row">
+                            <span>Total:</span>
+                            <span id="total">₹0</span>
+                        </div>
+                        
+                        <div class="promo-code">
+                            <input type="text" placeholder="Enter promo code" id="promoInput">
+                            <button id="applyPromo">Apply</button>
+                        </div>
+                        
+                        <div class="shipping-notice">
+                            <p><i class="fas fa-shipping-fast"></i> Free shipping on orders over ₹1999</p>
+                        </div>
+                        
+                        <div class="checkout-actions">
+                            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+                            <a href="shop.html" class="continue-shopping">Continue Shopping</a>
+                        </div>
+                        
+                        <div class="secure-checkout">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure Checkout</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommended Products -->
+            <div class="recommended-products" id="recommendedProducts">
+                <div class="section-header">
+                    <h2>You May Also Like</h2>
+                </div>
+                <div class="products-grid" id="recommendedProductsGrid">
+                    <!-- Recommended products will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Item Template -->
+    <template id="cartItemTemplate">
+        <div class="cart-item" data-product-id="">
+            <div class="item-image">
+                <img src="" alt="Product Image">
+            </div>
+            <div class="item-details">
+                <h3 class="item-name"></h3>
+                <p class="item-variant"></p>
+                <p class="item-price">
+                    <span class="current-price"></span>
+                    <span class="original-price"></span>
+                </p>
+            </div>
+            <div class="item-quantity">
+                <button class="qty-btn decrease">-</button>
+                <input type="number" class="qty-input" min="1" max="10">
+                <button class="qty-btn increase">+</button>
+            </div>
+            <div class="item-total">
+                <span class="total-price"></span>
+            </div>
+            <div class="item-actions">
+                <button class="remove-item" title="Remove from cart">
+                    <i class="fas fa-trash"></i>
+                </button>
+                <button class="save-later" title="Save for later">
+                    <i class="far fa-heart"></i>
+                </button>
+            </div>
+        </div>
+    </template>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shree Shyam Collection</h3>
+                    <p>Premium ethnic wear that celebrates tradition with contemporary elegance. Experience the beauty of Indian craftsmanship with our curated collection.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html?category=sarees">Sarees</a></li>
+                        <li><a href="shop.html?category=lehengas">Lehengas</a></li>
+                        <li><a href="shop.html?category=kurtis">Kurtis</a></li>
+                        <li><a href="shop.html?category=suits">Suits</a></li>
+                        <li><a href="shop.html?category=accessories">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html">Return & Refund</a></li>
+                        <li><a href="size-guide.html">Size Guide</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025, Shree Shyam Collection. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <img src="images/visa.png" alt="Visa">
+                    <img src="images/mastercard.png" alt="Mastercard">
+                    <img src="images/razorpay.png" alt="Razorpay">
+                    <img src="images/upi.png" alt="UPI">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

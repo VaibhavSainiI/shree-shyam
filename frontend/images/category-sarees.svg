@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <radialGradient id="saree-bg" cx="30%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ee5a52;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d63031;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="saree-fabric" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdcb6e;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#e17055;stop-opacity:0.8" />
+    </linearGradient>
+    <pattern id="paisley" patternUnits="userSpaceOnUse" width="60" height="60">
+      <path d="M30,10 Q45,5 50,20 Q55,35 40,40 Q25,35 20,20 Q25,5 30,10" fill="rgba(255,255,255,0.3)"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#saree-bg)"/>
+  
+  <!-- Saree draping -->
+  <path d="M150,80 Q300,60 450,80 L430,320 Q300,340 170,320 Z" fill="url(#saree-fabric)"/>
+  
+  <!-- Paisley pattern overlay -->
+  <rect x="150" y="80" width="300" height="240" fill="url(#paisley)" opacity="0.6"/>
+  
+  <!-- Border design -->
+  <path d="M150,80 Q300,60 450,80" stroke="#ffd700" stroke-width="8" fill="none"/>
+  <path d="M170,320 Q300,340 430,320" stroke="#ffd700" stroke-width="8" fill="none"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="200" cy="150" r="12" fill="#ffd700" opacity="0.8"/>
+  <circle cx="400" cy="180" r="12" fill="#ffd700" opacity="0.8"/>
+  <circle cx="250" cy="250" r="10" fill="#ffd700" opacity="0.8"/>
+  <circle cx="350" cy="220" r="10" fill="#ffd700" opacity="0.8"/>
+  
+  <!-- Text overlay -->
+  <rect x="0" y="320" width="600" height="80" fill="rgba(0,0,0,0.4)"/>
+  <text x="300" y="360" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="white">Sarees</text>
+  <text x="300" y="385" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="gold">Traditional Elegance</text>
+</svg>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Shree Shyam Collection</title>
+    <meta name="description" content="Shop premium ethnic wear at Shree Shyam Collection. Browse sarees, lehengas, kurtis, and more.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Top announcement bar -->
+        <div class="announcement-bar">
+            <div class="announcement-content">
+                <p>⚡ Prepaid Orders on Express Delivery | 🚚 COD on Normal Delivery</p>
+            </div>
+        </div>
+        
+        <!-- Main header -->
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <!-- Mobile menu toggle -->
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <h1>Shree Shyam Collection</h1>
+                            <span class="tagline">Premium Ethnic Wear</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Navigation -->
+                    <nav class="main-nav" id="mainNav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="dropdown">
+                                <a href="shop.html" class="active">Shop <i class="fas fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shop.html?category=sarees">Sarees</a></li>
+                                    <li><a href="shop.html?category=lehengas">Lehengas</a></li>
+                                    <li><a href="shop.html?category=kurtis">Kurtis</a></li>
+                                    <li><a href="shop.html?category=suits">Suits</a></li>
+                                    <li><a href="shop.html?category=accessories">Accessories</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <!-- Header actions -->
+                    <div class="header-actions">
+                        <button class="search-toggle" id="searchToggle">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <div class="account-dropdown" id="accountDropdown">
+                            <button class="account-btn" id="accountBtn">
+                                <i class="fas fa-user"></i>
+                                <span id="accountText">Account</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="account-menu" id="accountMenu">
+                                <!-- Will be populated by JavaScript based on auth state -->
+                            </div>
+                        </div>
+                        <a href="cart.html" class="cart-link">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Advanced Search bar -->
+        <div class="search-bar" id="searchBar">
+            <div class="container">
+                <div class="advanced-search-form">
+                    <div class="search-input-container">
+                        <input type="text" placeholder="Search for products..." id="searchInput" autocomplete="off">
+                        <div class="search-suggestions" id="searchSuggestions"></div>
+                        <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="search-filters">
+                        <select id="searchCategory" class="filter-select">
+                            <option value="">All Categories</option>
+                            <option value="sarees">Sarees</option>
+                            <option value="lehengas">Lehengas</option>
+                            <option value="kurtis">Kurtis</option>
+                            <option value="suits">Suits</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                        <select id="searchSort" class="filter-select">
+                            <option value="relevance">Sort by Relevance</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="newest">Newest First</option>
+                            <option value="popular">Most Popular</option>
+                            <option value="rating">Highest Rated</option>
+                        </select>
+                        <button class="clear-search" id="clearSearch" title="Clear Search">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Home</a>
+                <span class="separator">/</span>
+                <span class="current">Shop</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="shop-content">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Enhanced Sidebar -->
+                <aside class="shop-sidebar">
+                    <div class="sidebar-header">
+                        <h3><i class="fas fa-filter"></i> Filters</h3>
+                        <button class="clear-all-filters" id="clearAllFilters">Clear All</button>
+                    </div>
+
+                    <div class="active-filters" id="activeFilters" style="display: none;">
+                        <h4>Active Filters</h4>
+                        <div class="active-filter-tags" id="activeFilterTags"></div>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>Categories</h3>
+                        <ul class="category-filter">
+                            <li><a href="shop.html" class="filter-link active" data-category="all">All Products <span class="count" id="count-all">0</span></a></li>
+                            <li><a href="shop.html?category=sarees" class="filter-link" data-category="sarees">Sarees <span class="count" id="count-sarees">0</span></a></li>
+                            <li><a href="shop.html?category=lehengas" class="filter-link" data-category="lehengas">Lehengas <span class="count" id="count-lehengas">0</span></a></li>
+                            <li><a href="shop.html?category=kurtis" class="filter-link" data-category="kurtis">Kurtis <span class="count" id="count-kurtis">0</span></a></li>
+                            <li><a href="shop.html?category=suits" class="filter-link" data-category="suits">Suits <span class="count" id="count-suits">0</span></a></li>
+                            <li><a href="shop.html?category=accessories" class="filter-link" data-category="accessories">Accessories <span class="count" id="count-accessories">0</span></a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>Price Range</h3>
+                        <div class="price-filter">
+                            <div class="price-slider-container">
+                                <div class="price-slider" id="priceSlider">
+                                    <div class="slider-track"></div>
+                                    <div class="slider-range" id="sliderRange"></div>
+                                    <input type="range" id="minPriceSlider" min="0" max="50000" value="0" class="slider-input">
+                                    <input type="range" id="maxPriceSlider" min="0" max="50000" value="50000" class="slider-input">
+                                </div>
+                                <div class="price-inputs">
+                                    <input type="number" placeholder="Min" id="minPrice" min="0">
+                                    <span>to</span>
+                                    <input type="number" placeholder="Max" id="maxPrice" min="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Rating</h3>
+                        <div class="rating-filter">
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="4" data-filter="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                    <span>4 Stars & Up</span>
+                                </div>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="3" data-filter="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                    <span>3 Stars & Up</span>
+                                </div>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="2" data-filter="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                    <span>2 Stars & Up</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>Size</h3>
+                        <div class="size-filter">
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="XS" data-filter="size">
+                                <span class="checkmark"></span>
+                                XS
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="S" data-filter="size">
+                                <span class="checkmark"></span>
+                                S
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="M" data-filter="size">
+                                <span class="checkmark"></span>
+                                M
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="L" data-filter="size">
+                                <span class="checkmark"></span>
+                                L
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="XL" data-filter="size">
+                                <span class="checkmark"></span>
+                                XL
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="XXL" data-filter="size">
+                                <span class="checkmark"></span>
+                                XXL
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>Color</h3>
+                        <div class="color-filter">
+                            <label class="color-option" style="background-color: #ff0000;" data-color="red" title="Red">
+                                <input type="checkbox" value="red" data-filter="color">
+                                <span class="color-checkmark"><i class="fas fa-check"></i></span>
+                            </label>
+                            <label class="color-option" style="background-color: #0000ff;" data-color="blue" title="Blue">
+                                <input type="checkbox" value="blue" data-filter="color">
+                                <span class="color-checkmark"><i class="fas fa-check"></i></span>
+                            </label>
+                            <label class="color-option" style="background-color: #008000;" data-color="green" title="Green">
+                                <input type="checkbox" value="green" data-filter="color">
+                                <span class="color-checkmark"><i class="fas fa-check"></i></span>
+                            </label>
+                            <label class="color-option" style="background-color: #ffff00;" data-color="yellow" title="Yellow">
+                                <input type="checkbox" value="yellow" data-filter="color">
+                                <span class="color-checkmark"><i class="fas fa-check"></i></span>
+                            </label>
+                            <label class="color-option" style="background-color: #ffc0cb;" data-color="pink" title="Pink">
+                                <input type="checkbox" value="pink" data-filter="color">
+                                <span class="color-checkmark"><i class="fas fa-check"></i></span>
+                            </label>
+                            <label class="color-option" style="background-color: #800080;" data-color="purple" title="Purple">
+                                <input type="checkbox" value="purple" data-filter="color">
+                                <span class="color-checkmark"><i class="fas fa-check"></i></span>
+                            </label>
+                            <label class="color-option" style="background-color: #000000;" data-color="black" title="Black">
+                                <input type="checkbox" value="black" data-filter="color">
+                                <span class="color-checkmark"><i class="fas fa-check"></i></span>
+                            </label>
+                            <label class="color-option" style="background-color: #ffffff; border: 1px solid #ddd;" data-color="white" title="White">
+                                <input type="checkbox" value="white" data-filter="color">
+                                <span class="color-checkmark"><i class="fas fa-check"></i></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Availability</h3>
+                        <div class="availability-filter">
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="in-stock" data-filter="availability">
+                                <span class="checkmark"></span>
+                                In Stock
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="on-sale" data-filter="availability">
+                                <span class="checkmark"></span>
+                                On Sale
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="new-arrival" data-filter="availability">
+                                <span class="checkmark"></span>
+                                New Arrivals
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Brand</h3>
+                        <div class="brand-filter">
+                            <div class="search-brands">
+                                <input type="text" placeholder="Search brands..." id="brandSearch">
+                            </div>
+                            <div class="brand-list" id="brandList">
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="shree-shyam" data-filter="brand">
+                                    <span class="checkmark"></span>
+                                    Shree Shyam Collection
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="ethnic-elegance" data-filter="brand">
+                                    <span class="checkmark"></span>
+                                    Ethnic Elegance
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="traditional-trends" data-filter="brand">
+                                    <span class="checkmark"></span>
+                                    Traditional Trends
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <button class="clear-filters" id="clearFilters">Clear All Filters</button>
+                    </div>
+                </aside>
+
+                <!-- Enhanced Main Content -->
+                <main class="shop-main">
+                    <!-- Shop Header -->
+                    <div class="shop-header">
+                        <div class="shop-info">
+                            <h1 id="pageTitle">All Products</h1>
+                            <p class="product-count" id="productCount">Showing all products</p>
+                            <div class="search-results-info" id="searchResultsInfo" style="display: none;">
+                                <span class="search-term">Search results for: "<span id="searchTermDisplay"></span>"</span>
+                                <button class="clear-search-results" id="clearSearchResults">
+                                    <i class="fas fa-times"></i> Clear search
+                                </button>
+                            </div>
+                        </div>
+                        <div class="shop-controls">
+                            <div class="results-per-page">
+                                <label for="resultsPerPage">Show:</label>
+                                <select id="resultsPerPage">
+                                    <option value="12">12</option>
+                                    <option value="24" selected>24</option>
+                                    <option value="48">48</option>
+                                    <option value="96">96</option>
+                                </select>
+                            </div>
+                            <div class="view-toggle">
+                                <button class="view-btn active" data-view="grid" title="Grid View">
+                                    <i class="fas fa-th"></i>
+                                </button>
+                                <button class="view-btn" data-view="list" title="List View">
+                                    <i class="fas fa-list"></i>
+                                </button>
+                            </div>
+                            <div class="sort-dropdown">
+                                <label for="sortSelect">Sort by:</label>
+                                <select id="sortSelect">
+                                    <option value="featured">Featured</option>
+                                    <option value="price-low">Price: Low to High</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                    <option value="name">Name: A to Z</option>
+                                    <option value="newest">Newest First</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid -->
+                    <div class="products-container">
+                        <div class="products-grid" id="productsGrid">
+                            <!-- Products will be loaded dynamically -->
+                        </div>
+                        
+                        <!-- Loading indicator -->
+                        <div class="loading" id="loadingIndicator">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <p>Loading products...</p>
+                        </div>
+                        
+                        <!-- No products message -->
+                        <div class="no-products" id="noProducts" style="display: none;">
+                            <i class="fas fa-search"></i>
+                            <h3>No products found</h3>
+                            <p>Try adjusting your filters or search terms</p>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination" id="pagination">
+                        <!-- Pagination will be generated dynamically -->
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shree Shyam Collection</h3>
+                    <p>Premium ethnic wear that celebrates tradition with contemporary elegance. Experience the beauty of Indian craftsmanship with our curated collection.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html?category=sarees">Sarees</a></li>
+                        <li><a href="shop.html?category=lehengas">Lehengas</a></li>
+                        <li><a href="shop.html?category=kurtis">Kurtis</a></li>
+                        <li><a href="shop.html?category=suits">Suits</a></li>
+                        <li><a href="shop.html?category=accessories">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html">Return & Refund</a></li>
+                        <li><a href="size-guide.html">Size Guide</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025, Shree Shyam Collection. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <img src="images/visa.png" alt="Visa">
+                    <img src="images/mastercard.png" alt="Mastercard">
+                    <img src="images/razorpay.png" alt="Razorpay">
+                    <img src="images/upi.png" alt="UPI">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/sampleData.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/reviews.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

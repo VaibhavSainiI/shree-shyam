@@ -1,0 +1,62 @@
+<!-- Accessory 1: Jewelry Set -->
+<svg width="300" height="400" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="pearlGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0F0F0;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="400" fill="#FFF8DC"/>
+  
+  <!-- Jewelry box -->
+  <rect x="50" y="50" width="200" height="300" fill="#8B4513" stroke="#654321" stroke-width="2" rx="10"/>
+  <rect x="55" y="55" width="190" height="290" fill="#F5DEB3" stroke="#D2B48C" stroke-width="1" rx="8"/>
+  
+  <!-- Necklace -->
+  <ellipse cx="150" cy="120" rx="60" ry="15" fill="none" stroke="url(#goldGradient)" stroke-width="3"/>
+  <!-- Necklace beads -->
+  <circle cx="110" cy="115" r="4" fill="url(#pearlGradient)" stroke="#DDD" stroke-width="1"/>
+  <circle cx="125" cy="112" r="4" fill="url(#pearlGradient)" stroke="#DDD" stroke-width="1"/>
+  <circle cx="140" cy="110" r="5" fill="url(#pearlGradient)" stroke="#DDD" stroke-width="1"/>
+  <circle cx="150" cy="110" r="6" fill="url(#pearlGradient)" stroke="#DDD" stroke-width="1"/>
+  <circle cx="160" cy="110" r="5" fill="url(#pearlGradient)" stroke="#DDD" stroke-width="1"/>
+  <circle cx="175" cy="112" r="4" fill="url(#pearlGradient)" stroke="#DDD" stroke-width="1"/>
+  <circle cx="190" cy="115" r="4" fill="url(#pearlGradient)" stroke="#DDD" stroke-width="1"/>
+  
+  <!-- Pendant -->
+  <path d="M150 120 L145 130 Q150 135 155 130 Z" fill="url(#goldGradient)" stroke="#FF8C00" stroke-width="1"/>
+  <circle cx="150" cy="125" r="3" fill="#FF0000"/>
+  
+  <!-- Earrings -->
+  <circle cx="100" cy="180" r="12" fill="url(#goldGradient)" stroke="#FF8C00" stroke-width="2"/>
+  <circle cx="100" cy="180" r="6" fill="url(#pearlGradient)" stroke="#DDD" stroke-width="1"/>
+  <circle cx="200" cy="180" r="12" fill="url(#goldGradient)" stroke="#FF8C00" stroke-width="2"/>
+  <circle cx="200" cy="180" r="6" fill="url(#pearlGradient)" stroke="#DDD" stroke-width="1"/>
+  
+  <!-- Bangles -->
+  <circle cx="120" cy="250" r="20" fill="none" stroke="url(#goldGradient)" stroke-width="4"/>
+  <circle cx="150" cy="250" r="20" fill="none" stroke="url(#goldGradient)" stroke-width="4"/>
+  <circle cx="180" cy="250" r="20" fill="none" stroke="url(#goldGradient)" stroke-width="4"/>
+  
+  <!-- Ring -->
+  <circle cx="150" cy="300" r="8" fill="url(#goldGradient)" stroke="#FF8C00" stroke-width="1"/>
+  <circle cx="150" cy="300" r="3" fill="#0000FF"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="80" cy="100" r="3" fill="#FFD700"/>
+  <circle cx="220" cy="100" r="3" fill="#FFD700"/>
+  <circle cx="80" cy="320" r="3" fill="#FFD700"/>
+  <circle cx="220" cy="320" r="3" fill="#FFD700"/>
+  
+  <!-- Price tag -->
+  <rect x="200" y="15" width="90" height="35" fill="#FFF" stroke="#333" stroke-width="1" rx="5"/>
+  <text x="215" y="27" font-family="Arial" font-size="10" fill="#FFD700" font-weight="bold">₹3,999</text>
+  <text x="220" y="39" font-family="Arial" font-size="8" fill="#666">Jewelry Set</text>
+</svg>

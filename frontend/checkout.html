@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Shree Shyam Collection</title>
+    <meta name="description" content="Complete your purchase at Shree Shyam Collection.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Top announcement bar -->
+        <div class="announcement-bar">
+            <div class="announcement-content">
+                <p>⚡ Prepaid Orders on Express Delivery | 🚚 COD on Normal Delivery</p>
+            </div>
+        </div>
+        
+        <!-- Main header -->
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <h1>Shree Shyam Collection</h1>
+                            <span class="tagline">Premium Ethnic Wear</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Checkout Progress -->
+                    <div class="checkout-progress">
+                        <div class="step active">Cart</div>
+                        <div class="step active">Checkout</div>
+                        <div class="step">Payment</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Home</a>
+                <span class="separator">/</span>
+                <a href="cart.html">Cart</a>
+                <span class="separator">/</span>
+                <span class="current">Checkout</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Checkout Content -->
+    <section class="checkout-content">
+        <div class="container">
+            <div class="checkout-layout">
+                <!-- Checkout Form -->
+                <div class="checkout-form">
+                    <h2>Billing Information</h2>
+                    <form id="checkoutForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">Address *</label>
+                            <input type="text" id="address" name="address" placeholder="House number and street name" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State *</label>
+                                <select id="state" name="state" required>
+                                    <option value="">Select State</option>
+                                    <option value="AN">Andaman and Nicobar Islands</option>
+                                    <option value="AP">Andhra Pradesh</option>
+                                    <option value="AR">Arunachal Pradesh</option>
+                                    <option value="AS">Assam</option>
+                                    <option value="BR">Bihar</option>
+                                    <option value="CG">Chhattisgarh</option>
+                                    <option value="CH">Chandigarh</option>
+                                    <option value="DH">Dadra and Nagar Haveli</option>
+                                    <option value="DD">Daman and Diu</option>
+                                    <option value="DL">Delhi</option>
+                                    <option value="GA">Goa</option>
+                                    <option value="GJ">Gujarat</option>
+                                    <option value="HR">Haryana</option>
+                                    <option value="HP">Himachal Pradesh</option>
+                                    <option value="JK">Jammu and Kashmir</option>
+                                    <option value="JH">Jharkhand</option>
+                                    <option value="KA">Karnataka</option>
+                                    <option value="KL">Kerala</option>
+                                    <option value="LD">Lakshadweep</option>
+                                    <option value="MP">Madhya Pradesh</option>
+                                    <option value="MH">Maharashtra</option>
+                                    <option value="MN">Manipur</option>
+                                    <option value="ML">Meghalaya</option>
+                                    <option value="MZ">Mizoram</option>
+                                    <option value="NL">Nagaland</option>
+                                    <option value="OR">Odisha</option>
+                                    <option value="PY">Puducherry</option>
+                                    <option value="PB">Punjab</option>
+                                    <option value="RJ">Rajasthan</option>
+                                    <option value="SK">Sikkim</option>
+                                    <option value="TN">Tamil Nadu</option>
+                                    <option value="TS">Telangana</option>
+                                    <option value="TR">Tripura</option>
+                                    <option value="UP">Uttar Pradesh</option>
+                                    <option value="UK">Uttarakhand</option>
+                                    <option value="WB">West Bengal</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="pincode">PIN Code *</label>
+                                <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="orderNotes">Order Notes (Optional)</label>
+                            <textarea id="orderNotes" name="orderNotes" rows="3" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                        </div>
+                    </form>
+                    
+                    <div class="payment-methods">
+                        <h3><i class="fas fa-credit-card"></i> Choose Payment Method</h3>
+                        <div class="payment-options">
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="cod" checked>
+                                <div class="payment-content">
+                                    <div class="payment-icon">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                    </div>
+                                    <div class="payment-info">
+                                        <strong>Cash on Delivery</strong>
+                                        <small>Pay when you receive your order</small>
+                                        <div class="payment-features">
+                                            <span class="feature">✓ No prepayment required</span>
+                                            <span class="feature">✓ Safe & Secure</span>
+                                        </div>
+                                    </div>
+                                    <div class="payment-badge cod-badge">COD</div>
+                                </div>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="upi">
+                                <div class="payment-content">
+                                    <div class="payment-icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <div class="payment-info">
+                                        <strong>UPI Payment</strong>
+                                        <small>Pay instantly with UPI apps</small>
+                                        <div class="payment-features">
+                                            <span class="feature">✓ Instant payment</span>
+                                            <span class="feature">✓ Scan QR code</span>
+                                        </div>
+                                    </div>
+                                    <div class="payment-logos">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google Pay" title="Google Pay">
+                                        <img src="https://logoeps.com/wp-content/uploads/2013/03/paytm-vector-logo.png" alt="Paytm" title="Paytm">
+                                        <img src="https://logos-world.net/wp-content/uploads/2020/12/PhonePe-Logo.png" alt="PhonePe" title="PhonePe">
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="card">
+                                <div class="payment-content">
+                                    <div class="payment-icon">
+                                        <i class="fas fa-credit-card"></i>
+                                    </div>
+                                    <div class="payment-info">
+                                        <strong>Credit/Debit Card</strong>
+                                        <small>All major cards accepted</small>
+                                        <div class="payment-features">
+                                            <span class="feature">✓ Secure encryption</span>
+                                            <span class="feature">✓ EMI available</span>
+                                        </div>
+                                    </div>
+                                    <div class="payment-logos">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" title="Visa">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" title="Mastercard">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Rupay-Logo.png" alt="RuPay" title="RuPay">
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="netbanking">
+                                <div class="payment-content">
+                                    <div class="payment-icon">
+                                        <i class="fas fa-university"></i>
+                                    </div>
+                                    <div class="payment-info">
+                                        <strong>Net Banking</strong>
+                                        <small>All major banks supported</small>
+                                        <div class="payment-features">
+                                            <span class="feature">✓ Direct bank transfer</span>
+                                            <span class="feature">✓ 50+ banks</span>
+                                        </div>
+                                    </div>
+                                    <div class="payment-logos">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/SBI-logo.svg" alt="SBI" title="State Bank of India">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/1/1e/HDFC_Bank_Logo.svg" alt="HDFC" title="HDFC Bank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/ICICI_Bank_Logo.svg" alt="ICICI" title="ICICI Bank">
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="wallet">
+                                <div class="payment-content">
+                                    <div class="payment-icon">
+                                        <i class="fas fa-wallet"></i>
+                                    </div>
+                                    <div class="payment-info">
+                                        <strong>Digital Wallets</strong>
+                                        <small>Pay with your favorite wallet</small>
+                                        <div class="payment-features">
+                                            <span class="feature">✓ Quick payment</span>
+                                            <span class="feature">✓ Cashback offers</span>
+                                        </div>
+                                    </div>
+                                    <div class="payment-logos">
+                                        <img src="https://logoeps.com/wp-content/uploads/2013/03/paytm-vector-logo.png" alt="Paytm" title="Paytm Wallet">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/FreeCharge_logo.png" alt="FreeCharge" title="FreeCharge">
+                                        <img src="https://logos-world.net/wp-content/uploads/2020/12/Mobikwik-Logo.png" alt="MobiKwik" title="MobiKwik">
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <!-- Dynamic Payment Forms -->
+                        <div class="payment-forms">
+                            <!-- UPI Payment Form -->
+                            <div class="payment-form" id="upiForm" style="display: none;">
+                                <h4><i class="fas fa-mobile-alt"></i> UPI Payment</h4>
+                                <div class="upi-options">
+                                    <div class="upi-option">
+                                        <input type="radio" name="upiMethod" value="qr" id="upiQR" checked>
+                                        <label for="upiQR">
+                                            <i class="fas fa-qrcode"></i>
+                                            Scan QR Code
+                                        </label>
+                                    </div>
+                                    <div class="upi-option">
+                                        <input type="radio" name="upiMethod" value="id" id="upiID">
+                                        <label for="upiID">
+                                            <i class="fas fa-at"></i>
+                                            Enter UPI ID
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="upi-content">
+                                    <div class="qr-section" id="qrSection">
+                                        <div class="qr-placeholder">
+                                            <i class="fas fa-qrcode"></i>
+                                            <p>QR Code will be generated after order placement</p>
+                                        </div>
+                                    </div>
+                                    <div class="upi-id-section" id="upiIDSection" style="display: none;">
+                                        <div class="form-group">
+                                            <label for="upiIdInput">Enter your UPI ID</label>
+                                            <input type="text" id="upiIdInput" placeholder="example@paytm" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+">
+                                            <small>e.g., yourname@paytm, yourname@gpay, yourname@phonepe</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card Payment Form -->
+                            <div class="payment-form" id="cardForm" style="display: none;">
+                                <h4><i class="fas fa-credit-card"></i> Card Details</h4>
+                                <div class="card-form">
+                                    <div class="form-group">
+                                        <label for="cardNumber">Card Number</label>
+                                        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+                                        <div class="card-icons">
+                                            <i class="fab fa-cc-visa"></i>
+                                            <i class="fab fa-cc-mastercard"></i>
+                                            <i class="fab fa-cc-amex"></i>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="expiryDate">Expiry Date</label>
+                                            <input type="text" id="expiryDate" placeholder="MM/YY" maxlength="5">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cvv">CVV</label>
+                                            <input type="text" id="cvv" placeholder="123" maxlength="4">
+                                            <i class="fas fa-question-circle" title="3-4 digit security code on the back of your card"></i>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cardHolder">Cardholder Name</label>
+                                        <input type="text" id="cardHolder" placeholder="Name as on card">
+                                    </div>
+                                    <div class="form-options">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" id="saveCard">
+                                            <span class="checkmark"></span>
+                                            Save this card for future purchases
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Net Banking Form -->
+                            <div class="payment-form" id="netbankingForm" style="display: none;">
+                                <h4><i class="fas fa-university"></i> Select Your Bank</h4>
+                                <div class="bank-selection">
+                                    <div class="popular-banks">
+                                        <h5>Popular Banks</h5>
+                                        <div class="bank-grid">
+                                            <label class="bank-option">
+                                                <input type="radio" name="bank" value="sbi">
+                                                <div class="bank-info">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/SBI-logo.svg" alt="SBI">
+                                                    <span>State Bank of India</span>
+                                                </div>
+                                            </label>
+                                            <label class="bank-option">
+                                                <input type="radio" name="bank" value="hdfc">
+                                                <div class="bank-info">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/en/1/1e/HDFC_Bank_Logo.svg" alt="HDFC">
+                                                    <span>HDFC Bank</span>
+                                                </div>
+                                            </label>
+                                            <label class="bank-option">
+                                                <input type="radio" name="bank" value="icici">
+                                                <div class="bank-info">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/ICICI_Bank_Logo.svg" alt="ICICI">
+                                                    <span>ICICI Bank</span>
+                                                </div>
+                                            </label>
+                                            <label class="bank-option">
+                                                <input type="radio" name="bank" value="axis">
+                                                <div class="bank-info">
+                                                    <span class="bank-icon">🏦</span>
+                                                    <span>Axis Bank</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="other-banks">
+                                        <h5>Other Banks</h5>
+                                        <select id="otherBanks" name="otherBank">
+                                            <option value="">Select your bank</option>
+                                            <option value="pnb">Punjab National Bank</option>
+                                            <option value="bob">Bank of Baroda</option>
+                                            <option value="canara">Canara Bank</option>
+                                            <option value="union">Union Bank of India</option>
+                                            <option value="kotak">Kotak Mahindra Bank</option>
+                                            <option value="yes">Yes Bank</option>
+                                            <option value="indusind">IndusInd Bank</option>
+                                            <option value="federal">Federal Bank</option>
+                                            <option value="iob">Indian Overseas Bank</option>
+                                            <option value="syndicate">Syndicate Bank</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Wallet Payment Form -->
+                            <div class="payment-form" id="walletForm" style="display: none;">
+                                <h4><i class="fas fa-wallet"></i> Choose Your Wallet</h4>
+                                <div class="wallet-selection">
+                                    <label class="wallet-option">
+                                        <input type="radio" name="wallet" value="paytm">
+                                        <div class="wallet-info">
+                                            <img src="https://logoeps.com/wp-content/uploads/2013/03/paytm-vector-logo.png" alt="Paytm">
+                                            <span>Paytm Wallet</span>
+                                        </div>
+                                    </label>
+                                    <label class="wallet-option">
+                                        <input type="radio" name="wallet" value="freecharge">
+                                        <div class="wallet-info">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/FreeCharge_logo.png" alt="FreeCharge">
+                                            <span>FreeCharge</span>
+                                        </div>
+                                    </label>
+                                    <label class="wallet-option">
+                                        <input type="radio" name="wallet" value="mobikwik">
+                                        <div class="wallet-info">
+                                            <img src="https://logos-world.net/wp-content/uploads/2020/12/Mobikwik-Logo.png" alt="MobiKwik">
+                                            <span>MobiKwik</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Security Info -->
+                        <div class="payment-security">
+                            <div class="security-badges">
+                                <div class="security-badge">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>SSL Secured</span>
+                                </div>
+                                <div class="security-badge">
+                                    <i class="fas fa-lock"></i>
+                                    <span>Encrypted</span>
+                                </div>
+                                <div class="security-badge">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>PCI Compliant</span>
+                                </div>
+                            </div>
+                            <p class="security-text">
+                                <i class="fas fa-info-circle"></i>
+                                Your payment information is secure and encrypted using industry-standard protocols.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div class="order-items" id="orderItems">
+                        <!-- Items will be loaded dynamically -->
+                    </div>
+                    
+                    <div class="order-totals">
+                        <div class="total-row">
+                            <span>Subtotal:</span>
+                            <span id="orderSubtotal">₹0</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Shipping:</span>
+                            <span id="orderShipping">Free</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Tax (GST):</span>
+                            <span id="orderTax">₹0</span>
+                        </div>
+                        <div class="total-row total-final">
+                            <span><strong>Total:</strong></span>
+                            <span id="orderTotal"><strong>₹0</strong></span>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="place-order-btn" id="placeOrderBtn">
+                        <i class="fas fa-lock"></i> Place Order
+                    </button>
+                    
+                    <div class="security-badges">
+                        <p>
+                            <i class="fas fa-shield-alt"></i>
+                            Your payment information is secure and encrypted
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shree Shyam Collection</h3>
+                    <p>Premium ethnic wear that celebrates tradition with contemporary elegance.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return & Refund</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025, Shree Shyam Collection. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <img src="images/visa.png" alt="Visa">
+                    <img src="images/mastercard.png" alt="Mastercard">
+                    <img src="images/razorpay.png" alt="Razorpay">
+                    <img src="images/upi.png" alt="UPI">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/sampleData.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

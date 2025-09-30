@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Shree Shyam Collection</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Shree Shyam Collection</h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search products...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <a href="#" class="header-icon"><i class="fas fa-heart"></i></a>
+                    <a href="cart.html" class="header-icon"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="#" class="header-icon user-icon"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="shop.html">Shop</a>
+                <span>/</span>
+                <span id="productCategory">Sarees</span>
+                <span>/</span>
+                <span id="productName">Elegant Red Saree</span>
+            </nav>
+
+            <!-- Product Details Section -->
+            <div class="product-detail-section">
+                <div class="product-detail-container">
+                    <!-- Product Images -->
+                    <div class="product-images">
+                        <div class="main-image">
+                            <img id="mainProductImage" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600" alt="Product Image">
+                            <div class="image-badges">
+                                <span class="badge featured">Featured</span>
+                                <span class="badge discount">40% OFF</span>
+                            </div>
+                        </div>
+                        <div class="thumbnail-images">
+                            <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=150" alt="Thumbnail 1" class="thumb active" onclick="changeMainImage(this.src)">
+                            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=150" alt="Thumbnail 2" class="thumb" onclick="changeMainImage(this.src)">
+                            <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=150" alt="Thumbnail 3" class="thumb" onclick="changeMainImage(this.src)">
+                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=150" alt="Thumbnail 4" class="thumb" onclick="changeMainImage(this.src)">
+                        </div>
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="product-info-detail">
+                        <div class="product-brand">Royal Collection</div>
+                        <h1 class="product-title">Elegant Red Saree</h1>
+                        
+                        <div class="product-rating-detail">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-value">4.5</span>
+                            <span class="review-count">(120 reviews)</span>
+                            <a href="#reviewsSection" class="review-link">See all reviews</a>
+                        </div>
+
+                        <div class="product-price-detail">
+                            <span class="current-price">₹2,999</span>
+                            <span class="original-price">₹4,999</span>
+                            <span class="discount-percent">40% OFF</span>
+                            <div class="price-note">Inclusive of all taxes</div>
+                        </div>
+
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <i class="fas fa-shipping-fast"></i>
+                                <span>Free shipping above ₹999</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-undo"></i>
+                                <span>7 days easy return</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>100% Authentic</span>
+                            </div>
+                        </div>
+
+                        <div class="product-options">
+                            <div class="option-group">
+                                <label>Size:</label>
+                                <div class="size-options">
+                                    <input type="radio" name="size" value="S" id="sizeS">
+                                    <label for="sizeS" class="size-option">S</label>
+                                    <input type="radio" name="size" value="M" id="sizeM" checked>
+                                    <label for="sizeM" class="size-option">M</label>
+                                    <input type="radio" name="size" value="L" id="sizeL">
+                                    <label for="sizeL" class="size-option">L</label>
+                                    <input type="radio" name="size" value="XL" id="sizeXL">
+                                    <label for="sizeXL" class="size-option">XL</label>
+                                </div>
+                            </div>
+
+                            <div class="option-group">
+                                <label>Color:</label>
+                                <div class="color-options">
+                                    <input type="radio" name="color" value="red" id="colorRed" checked>
+                                    <label for="colorRed" class="color-option" style="background-color: red;"></label>
+                                    <input type="radio" name="color" value="blue" id="colorBlue">
+                                    <label for="colorBlue" class="color-option" style="background-color: blue;"></label>
+                                    <input type="radio" name="color" value="green" id="colorGreen">
+                                    <label for="colorGreen" class="color-option" style="background-color: green;"></label>
+                                </div>
+                            </div>
+
+                            <div class="option-group">
+                                <label>Quantity:</label>
+                                <div class="quantity-selector">
+                                    <button type="button" onclick="changeQuantity(-1)">-</button>
+                                    <input type="number" value="1" min="1" max="10" id="quantity">
+                                    <button type="button" onclick="changeQuantity(1)">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-actions-detail">
+                            <button class="btn-add-to-cart" onclick="addToCart(1)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                            <button class="btn-buy-now" onclick="buyNow(1)">
+                                <i class="fas fa-bolt"></i>
+                                Buy Now
+                            </button>
+                            <button class="btn-wishlist" onclick="addToWishlist(1)">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="product-description">
+                            <h3>Product Description</h3>
+                            <p>This elegant red saree is perfect for special occasions and festivals. Made from premium silk with intricate traditional embroidery, it combines classic design with modern comfort. The rich red color and gold accents make it a perfect choice for weddings and celebrations.</p>
+                            
+                            <ul class="product-details-list">
+                                <li><strong>Fabric:</strong> Pure Silk</li>
+                                <li><strong>Work:</strong> Traditional Embroidery</li>
+                                <li><strong>Length:</strong> 6.5 meters</li>
+                                <li><strong>Blouse:</strong> Included (unstitched)</li>
+                                <li><strong>Care:</strong> Dry clean only</li>
+                                <li><strong>Occasion:</strong> Wedding, Festival, Party</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Recommendations -->
+            <div id="productRecommendations"></div>
+
+            <!-- Product Reviews -->
+            <div id="productReviews"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shree Shyam Collection</h3>
+                    <p>Your destination for authentic Indian ethnic wear. Quality, tradition, and style combined.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025, Shree Shyam Collection. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <img src="images/visa.png" alt="Visa">
+                    <img src="images/mastercard.png" alt="Mastercard">
+                    <img src="images/razorpay.png" alt="Razorpay">
+                    <img src="images/upi.png" alt="UPI">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/sampleData.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/reviews.js"></script>
+    <script src="js/cart.js"></script>
+    
+    <script>
+        // Product Detail Page Functionality
+        function changeMainImage(src) {
+            document.getElementById('mainProductImage').src = src;
+            
+            // Update active thumbnail
+            document.querySelectorAll('.thumb').forEach(thumb => {
+                thumb.classList.remove('active');
+                if (thumb.src === src) {
+                    thumb.classList.add('active');
+                }
+            });
+        }
+
+        function changeQuantity(delta) {
+            const quantityInput = document.getElementById('quantity');
+            const currentValue = parseInt(quantityInput.value);
+            const newValue = currentValue + delta;
+            
+            if (newValue >= 1 && newValue <= 10) {
+                quantityInput.value = newValue;
+            }
+        }
+
+        // Initialize product detail page
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize recommendations for this product
+            setTimeout(() => {
+                if (window.recommendationsEngine) {
+                    const recommendationsContainer = document.getElementById('productRecommendations');
+                    recommendationsContainer.innerHTML = `
+                        <div class="recommendation-block">
+                            <div class="recommendation-header">
+                                <h3><i class="fas fa-heart"></i> You May Also Like</h3>
+                            </div>
+                            <div class="recommendation-grid" id="productPageRecommendations"></div>
+                        </div>
+                    `;
+                    
+                    // Render similar products
+                    const similarProducts = recommendationsEngine.getSimilarProducts().slice(0, 4);
+                    document.getElementById('productPageRecommendations').innerHTML = 
+                        similarProducts.map(product => recommendationsEngine.createRecommendationCard(product, 'similar')).join('');
+                }
+                
+                // Initialize reviews for this product
+                if (window.reviewsSystem) {
+                    const reviewsContainer = document.getElementById('productReviews');
+                    reviewsSystem.renderReviewsSection(1, reviewsContainer);
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <radialGradient id="lehenga-bg" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#fd79a8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e84393;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a29bfe;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="lehenga-skirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fab1a0;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#ff7675;stop-opacity:0.9" />
+    </linearGradient>
+    <pattern id="embroidery" patternUnits="userSpaceOnUse" width="40" height="40">
+      <polygon points="20,5 35,15 30,30 10,30 5,15" fill="rgba(255,255,255,0.4)"/>
+      <circle cx="20" cy="20" r="8" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#lehenga-bg)"/>
+  
+  <!-- Lehenga skirt (flared) -->
+  <path d="M200,200 Q300,180 400,200 L480,350 Q300,380 120,350 Z" fill="url(#lehenga-skirt)"/>
+  
+  <!-- Choli (top) -->
+  <path d="M250,100 Q300,90 350,100 L340,180 Q300,190 260,180 Z" fill="url(#lehenga-skirt)" opacity="0.8"/>
+  
+  <!-- Embroidery pattern -->
+  <rect x="200" y="200" width="200" height="150" fill="url(#embroidery)" opacity="0.7"/>
+  
+  <!-- Heavy border work -->
+  <path d="M120,350 Q300,380 480,350" stroke="#ffd700" stroke-width="12" fill="none"/>
+  <path d="M140,340 Q300,370 460,340" stroke="#ff6348" stroke-width="6" fill="none"/>
+  
+  <!-- Decorative beadwork -->
+  <circle cx="250" cy="250" r="8" fill="#ffd700"/>
+  <circle cx="350" cy="270" r="8" fill="#ffd700"/>
+  <circle cx="300" cy="300" r="6" fill="#ffd700"/>
+  <circle cx="220" cy="290" r="6" fill="#ffd700"/>
+  <circle cx="380" cy="310" r="6" fill="#ffd700"/>
+  
+  <!-- Text overlay -->
+  <rect x="0" y="320" width="600" height="80" fill="rgba(0,0,0,0.4)"/>
+  <text x="300" y="360" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="white">Lehengas</text>
+  <text x="300" y="385" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="gold">Festive Grandeur</text>
+</svg>
