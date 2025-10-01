@@ -1,4 +1,4 @@
-# 🌟 Shree Shyam Collection - Advanced E-commerce Platform
+# 🌟 Shri Shyam Collection - Advanced E-commerce Platform
 
 A modern, feature-rich e-commerce platform for ethnic Indian wear, built with cutting-edge technologies and enhanced with AI-powered features.
 
@@ -72,7 +72,7 @@ A modern, feature-rich e-commerce platform for ethnic Indian wear, built with cu
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd "shree shyam collection"
+   cd "Shri shyam collection"
    ```
 
 2. **Setup Backend**
@@ -114,7 +114,7 @@ docker-compose --profile production up -d
 ```
 
 ```
-shree-shyam-collection/
+Shri-shyam-collection/
 ├── frontend/           # Client-side application
 │   ├── css/           # Stylesheets
 │   ├── js/            # JavaScript files

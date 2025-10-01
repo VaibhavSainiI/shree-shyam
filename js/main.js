@@ -1,4 +1,4 @@
-// Main JavaScript for Shree Shyam Collection Website
+// Main JavaScript for Shri Shyam Collection Website
 // Global variables and utilities
 
 // Utility functions
@@ -654,7 +654,7 @@ document.addEventListener('DOMContentLoaded', function() {
         Utils.addClass(document.body, 'loaded');
     });
     
-    console.log('Shree Shyam Collection website initialized successfully!');
+    console.log('Shri Shyam Collection website initialized successfully!');
 });
 
 // Global error handling
@@ -670,7 +670,7 @@ window.addEventListener('unhandledrejection', (e) => {
 });
 
 // Export for use in other scripts
-window.ShreeShyamCollection = {
+window.ShriShyamCollection = {
     Utils,
     AppState,
     Header,

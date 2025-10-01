@@ -1,4 +1,4 @@
-// Checkout functionality for Shree Shyam Collection
+// Checkout functionality for Shri Shyam Collection
 
 class CheckoutManager {
     constructor() {

@@ -1,4 +1,4 @@
-// Hero Slider Functionality for Shree Shyam Collection
+// Hero Slider Functionality for Shri Shyam Collection
 
 const HeroSlider = {
     currentSlide: 0,
@@ -489,7 +489,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Export slider functionality
-window.ShreeShyamCollection = window.ShreeShyamCollection || {};
-window.ShreeShyamCollection.HeroSlider = HeroSlider;
-window.ShreeShyamCollection.ImageGallery = ImageGallery;
-window.ShreeShyamCollection.Carousel = Carousel;
+window.ShriShyamCollection = window.ShriShyamCollection || {};
+window.ShriShyamCollection.HeroSlider = HeroSlider;
+window.ShriShyamCollection.ImageGallery = ImageGallery;
+window.ShriShyamCollection.Carousel = Carousel;

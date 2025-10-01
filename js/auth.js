@@ -1,4 +1,4 @@
-// Authentication Manager for Shree Shyam Collection
+// Authentication Manager for Shri Shyam Collection
 class AuthManager {
     constructor() {
         this.baseURL = 'http://localhost:5000/api';
@@ -257,7 +257,7 @@ class AuthManager {
                 localStorage.setItem('token', this.token);
                 localStorage.setItem('user', JSON.stringify(this.user));
 
-                this.showToast('Registration successful! Welcome to Shree Shyam Collection.', 'success');
+                this.showToast('Registration successful! Welcome to Shri Shyam Collection.', 'success');
                 this.showDashboard();
                 this.updateHeaderUI();
             } else {

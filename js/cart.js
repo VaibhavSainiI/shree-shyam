@@ -1,4 +1,4 @@
-// Shopping Cart Functionality for Shree Shyam Collection
+// Shopping Cart Functionality for Shri Shyam Collection
 
 const Cart = {
     // Initialize cart functionality
@@ -466,5 +466,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Export cart functionality
-window.ShreeShyamCollection = window.ShreeShyamCollection || {};
-window.ShreeShyamCollection.Cart = Cart;
+window.ShriShyamCollection = window.ShriShyamCollection || {};
+window.ShriShyamCollection.Cart = Cart;
