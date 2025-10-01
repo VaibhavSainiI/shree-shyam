@@ -893,6 +893,49 @@ ul {
     transform: translateY(-2px);
 }
 
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info i {
+    color: #d4a574;
+    width: 16px;
+    text-align: center;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #25d366;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #20ba5a;
+    transform: translateY(-1px);
+}
+
+.social-description {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
 .footer-bottom {
     border-top: 1px solid #444;
     padding-top: 20px;
