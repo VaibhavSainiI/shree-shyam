@@ -344,6 +344,23 @@ const sampleProducts = [
         inStock: true,
         rating: 4.3,
         reviews: 42
+    },
+    {
+        id: 53,
+        name: "Premium Collection Catalog",
+        price: 770,
+        originalPrice: 999,
+        image: "images/catalog-770.svg",
+        category: "catalogs",
+        description: "Complete premium ethnic wear collection catalog with detailed designs and fabric information. View our entire range in this beautifully curated catalog.",
+        colors: ["Multi-Color"],
+        sizes: ["Digital Catalog"],
+        inStock: true,
+        rating: 4.8,
+        reviews: 15,
+        isPDF: true,
+        pdfUrl: "documents/770.pdf",
+        features: ["Complete Collection", "Fabric Details", "Size Guide", "Care Instructions"]
     }
 ];
 

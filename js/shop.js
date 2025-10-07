@@ -517,6 +517,7 @@ class AdvancedShop {
         return `
             <div class="product-card" data-id="${product.id}">
                 ${product.featured ? '<div class="product-badge">Featured</div>' : ''}
+                ${product.isPDF ? '<div class="product-badge" style="background: #22c55e;">Digital Catalog</div>' : ''}
                 ${discount > 0 ? `<div class="discount-badge">${discount}% OFF</div>` : ''}
                 <div class="product-image">
                     <img src="${product.image || product.imageUrl || 'https://via.placeholder.com/300x400?text=No+Image'}" alt="${product.name}" loading="lazy">
@@ -548,12 +549,21 @@ class AdvancedShop {
                         }
                     </div>
                     <div class="product-actions">
-                        <button class="btn-add-cart" onclick="addToCart(${product.id})">
-                            <i class="fas fa-shopping-cart"></i> Add to Cart
-                        </button>
-                        <button class="btn-buy-now" onclick="buyNow(${product.id})">
-                            Buy Now
-                        </button>
+                        ${product.isPDF ? `
+                            <button class="btn-add-cart" onclick="window.location.href='catalog-770.html'">
+                                <i class="fas fa-book"></i> View Catalog
+                            </button>
+                            <button class="btn-buy-now" onclick="addToCart(${product.id})">
+                                <i class="fas fa-shopping-cart"></i> Purchase ₹${product.price}
+                            </button>
+                        ` : `
+                            <button class="btn-add-cart" onclick="addToCart(${product.id})">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                            <button class="btn-buy-now" onclick="buyNow(${product.id})">
+                                Buy Now
+                            </button>
+                        `}
                     </div>
                 </div>
             </div>
